@@ -14,11 +14,20 @@ final class BaseRouter {
     // MARK: Routing
     func presentSignInViewController() {
         let signInViewController = SignInViewController()
-        viewController?.navigationController?.pushViewController(signInViewController, animated: true)
+        signInViewController.modalPresentationStyle = .fullScreen
+        viewController?.present(signInViewController, animated: true)
     }
-    
+
+    func presentSignUpViewController() {
+        let signUpViewController = SignUpViewController()
+        viewController?.navigationController?.pushViewController(signUpViewController, animated: true)
+    }
+
     func popViewController() {
-        let signInViewController = SignInViewController()
         viewController?.navigationController?.popViewController(animated: true)
+    }
+
+    func dismissViewController() {
+        viewController?.dismiss(animated: true)
     }
 }

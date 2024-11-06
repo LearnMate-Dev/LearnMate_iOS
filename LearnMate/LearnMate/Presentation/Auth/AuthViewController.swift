@@ -41,5 +41,10 @@ class AuthViewController: BaseViewController {
             guard let self else { return }
             router.presentSignInViewController()
         }
+
+        authView.tapSignUp = { [weak self] in
+            guard let self else { return }
+            router.presentSignUpViewController()
+        }
     }
 }

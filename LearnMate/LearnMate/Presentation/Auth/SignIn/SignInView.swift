@@ -39,13 +39,13 @@ final class SignInView: BaseView {
     // MARK: Layout
     override func makeConstraints() {
         logoImageView.snp.makeConstraints {
-            $0.top.equalTo(safeAreaLayoutGuide).inset(112)
+            $0.top.equalTo(safeAreaLayoutGuide).inset(182)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(282)
         }
 
         idTextField.snp.makeConstraints {
-            $0.top.equalTo(logoImageView.snp.bottom).offset(97)
+            $0.top.equalTo(logoImageView.snp.bottom).offset(117)
             $0.horizontalEdges.width.equalToSuperview()
         }
         
@@ -55,7 +55,7 @@ final class SignInView: BaseView {
         }
 
         signInButton.snp.makeConstraints {
-            $0.top.equalTo(passwordTextField.snp.bottom).offset(36)
+            $0.top.equalTo(passwordTextField.snp.bottom).offset(26)
             $0.horizontalEdges.width.equalToSuperview()
         }
     }

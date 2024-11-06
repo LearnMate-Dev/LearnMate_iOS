@@ -12,8 +12,8 @@ class SignInViewController: BaseViewController {
     // MARK: UI Components
     private let signInView = SignInView()
 
-    private let backButton = BaseButton().then {
-        $0.setImage(LMButton.backButton, for: .normal)
+    private let closeButton = BaseButton().then {
+        $0.setImage(LMButton.closeButton, for: .normal)
     }
 
     // MARK: Environment
@@ -29,6 +29,7 @@ class SignInViewController: BaseViewController {
     // MARK: Configuration
     override func configureSubviews() {
         view.addSubview(signInView)
+        view.addSubview(closeButton)
     }
 
     // MARK: Layout
@@ -37,22 +38,18 @@ class SignInViewController: BaseViewController {
             $0.verticalEdges.equalToSuperview()
             $0.horizontalEdges.equalToSuperview().inset(20)
         }
+
+        closeButton.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(60)
+            $0.trailing.equalToSuperview().inset(20)
+        }
     }
 
     // MARK: View Transition
     override func viewTransition() {
-        backButton.tap = { [weak self] in
+        closeButton.tap = { [weak self] in
             guard let self else { return }
-            router.popViewController()
+            router.dismissViewController()
         }
-    }
-
-    // MARK: Set Navigation Item
-    override func setNavigationItem() {
-        setDefaultNavigationItem(title: "로그인",
-                                 leftBarButton: backButton,
-                                 rightBarButton: nil)
-        navigationItem.hidesBackButton = true
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
 }
