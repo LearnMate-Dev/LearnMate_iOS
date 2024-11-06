@@ -11,6 +11,10 @@ public enum LMImage {
     public static var splash: UIImage { .load(name: "Splash")}
 }
 
+public enum LMButton {
+    public static var backButton: UIImage { .load(name: "ic_back")}
+}
+
 extension UIImage {
     static func load(name: String) -> UIImage {
         guard let image = UIImage(named: name, in: nil, compatibleWith: nil) else {
