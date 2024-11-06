@@ -44,6 +44,8 @@
 		950F8FCE2CDB33CB000D42DA /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */; };
 		950F8FD22CDB3744000D42DA /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FD12CDB3744000D42DA /* UITextField+Extension.swift */; };
 		950F8FD42CDB3977000D42DA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FD32CDB3977000D42DA /* UIViewController+Extension.swift */; };
+		950F8FD62CDB418A000D42DA /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FD52CDB418A000D42DA /* UILabel+Extension.swift */; };
+		950F8FD82CDB46EB000D42DA /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FD72CDB46EB000D42DA /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		950F8FD12CDB3744000D42DA /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		950F8FD32CDB3977000D42DA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		950F8FD52CDB418A000D42DA /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		950F8FD72CDB46EB000D42DA /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +324,8 @@
 			isa = PBXGroup;
 			children = (
 				950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */,
+				950F8FD52CDB418A000D42DA /* UILabel+Extension.swift */,
+				950F8FD72CDB46EB000D42DA /* UIStackView+Extension.swift */,
 				950F8FD12CDB3744000D42DA /* UITextField+Extension.swift */,
 				950F8FD32CDB3977000D42DA /* UIViewController+Extension.swift */,
 			);
@@ -412,10 +418,12 @@
 				950F8F8A2CDB2811000D42DA /* UserDefault.swift in Sources */,
 				950F8FCB2CDB31D0000D42DA /* ImageLiteral.swift in Sources */,
 				950F8F9C2CDB28D8000D42DA /* TabBarViewController.swift in Sources */,
+				950F8FD82CDB46EB000D42DA /* UIStackView+Extension.swift in Sources */,
 				950F8F922CDB2863000D42DA /* BaseView.swift in Sources */,
 				950F8FAA2CDB291F000D42DA /* SignUpViewController.swift in Sources */,
 				950F8FA42CDB290D000D42DA /* SignInView.swift in Sources */,
 				950F8F942CDB2869000D42DA /* BaseButton.swift in Sources */,
+				950F8FD62CDB418A000D42DA /* UILabel+Extension.swift in Sources */,
 				950F8FB42CDB293D000D42DA /* MyPageView.swift in Sources */,
 				950F8FA82CDB291A000D42DA /* SignUpView.swift in Sources */,
 				950F8FA62CDB2913000D42DA /* SignInViewController.swift in Sources */,
