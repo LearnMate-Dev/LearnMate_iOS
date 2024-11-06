@@ -23,9 +23,15 @@ final class AuthView: BaseView {
         $0.setDefaultButton(title: "회원가입", titleColor: .white, backgroundColor: .black)
     }
 
+    // MARK: Properties
+    var tapSignIn: (() -> Void)?
+    var tapSignUp: (() -> Void)?
+
     // MARK: Configuration
     override func configureSubviews() {
+        addButtonEvent()
         backgroundColor = .white
+
         addSubview(logoImageView)
         addSubview(signInButton)
         addSubview(signUpButton)
@@ -48,5 +54,21 @@ final class AuthView: BaseView {
             $0.bottom.equalTo(safeAreaLayoutGuide).inset(30)
             $0.horizontalEdges.width.equalToSuperview()
         }
+    }
+
+    // MARK: Event
+    private func addButtonEvent() {
+        signInButton.addTarget(self, action: #selector(handleSignInButton), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(handleSignUpButton), for: .touchUpInside)
+    }
+
+    @objc
+    private func handleSignInButton() {
+        tapSignIn?()
+    }
+
+    @objc
+    private func handleSignUpButton() {
+        tapSignUp?()
     }
 }
