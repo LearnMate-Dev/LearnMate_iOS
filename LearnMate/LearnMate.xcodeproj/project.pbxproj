@@ -12,7 +12,6 @@
 		950F8F5B2CDB2183000D42DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950F8F5A2CDB2183000D42DA /* Assets.xcassets */; };
 		950F8F5E2CDB2183000D42DA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 950F8F5D2CDB2183000D42DA /* Base */; };
 		950F8F6D2CDB2762000D42DA /* LMColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950F8F6C2CDB2762000D42DA /* LMColors.xcassets */; };
-		950F8F6F2CDB276B000D42DA /* UI+Extension.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950F8F6E2CDB276B000D42DA /* UI+Extension.xcassets */; };
 		950F8F792CDB2788000D42DA /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F782CDB2788000D42DA /* Auth.swift */; };
 		950F8F7B2CDB278D000D42DA /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F7A2CDB278D000D42DA /* Diary.swift */; };
 		950F8F7D2CDB279B000D42DA /* TodoGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F7C2CDB279B000D42DA /* TodoGuide.swift */; };
@@ -42,6 +41,7 @@
 		950F8FBF2CDB2E04000D42DA /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FBE2CDB2E04000D42DA /* DiaryView.swift */; };
 		950F8FC32CDB2E15000D42DA /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */; };
 		950F8FCB2CDB31D0000D42DA /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FCA2CDB31D0000D42DA /* ImageLiteral.swift */; };
+		950F8FCE2CDB33CB000D42DA /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,6 @@
 		950F8F5D2CDB2183000D42DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		950F8F5F2CDB2183000D42DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950F8F6C2CDB2762000D42DA /* LMColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LMColors.xcassets; sourceTree = "<group>"; };
-		950F8F6E2CDB276B000D42DA /* UI+Extension.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "UI+Extension.xcassets"; sourceTree = "<group>"; };
 		950F8F782CDB2788000D42DA /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		950F8F7A2CDB278D000D42DA /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		950F8F7C2CDB279B000D42DA /* TodoGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoGuide.swift; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		950F8FBE2CDB2E04000D42DA /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		950F8FCA2CDB31D0000D42DA /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 		950F8F672CDB2707000D42DA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				950F8F6E2CDB276B000D42DA /* UI+Extension.xcassets */,
+				950F8FCC2CDB33BF000D42DA /* UI+Extension */,
 				950F8FC72CDB31B4000D42DA /* Literal */,
 			);
 			path = Extension;
@@ -312,6 +312,14 @@
 			path = Literal;
 			sourceTree = "<group>";
 		};
+		950F8FCC2CDB33BF000D42DA /* UI+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */,
+			);
+			path = "UI+Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,7 +389,6 @@
 				950F8F5B2CDB2183000D42DA /* Assets.xcassets in Resources */,
 				950F8F6D2CDB2762000D42DA /* LMColors.xcassets in Resources */,
 				950F8F5E2CDB2183000D42DA /* Base in Resources */,
-				950F8F6F2CDB276B000D42DA /* UI+Extension.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +422,7 @@
 				950F8FA02CDB28EA000D42DA /* AuthViewController.swift in Sources */,
 				950F8F8C2CDB2818000D42DA /* UserDefaultHandler.swift in Sources */,
 				950F8F902CDB285B000D42DA /* BaseViewController.swift in Sources */,
+				950F8FCE2CDB33CB000D42DA /* UIButton+Extension.swift in Sources */,
 				950F8F9A2CDB28D0000D42DA /* SplashView.swift in Sources */,
 				950F8FB62CDB2944000D42DA /* MyPageViewController.swift in Sources */,
 				950F8F9E2CDB28E4000D42DA /* AuthView.swift in Sources */,
