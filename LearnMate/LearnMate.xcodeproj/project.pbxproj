@@ -42,6 +42,8 @@
 		950F8FC32CDB2E15000D42DA /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */; };
 		950F8FCB2CDB31D0000D42DA /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FCA2CDB31D0000D42DA /* ImageLiteral.swift */; };
 		950F8FCE2CDB33CB000D42DA /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */; };
+		950F8FD22CDB3744000D42DA /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FD12CDB3744000D42DA /* UITextField+Extension.swift */; };
+		950F8FD42CDB3977000D42DA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FD32CDB3977000D42DA /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		950F8FCA2CDB31D0000D42DA /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		950F8FD12CDB3744000D42DA /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		950F8FD32CDB3977000D42DA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				950F8FCD2CDB33CB000D42DA /* UIButton+Extension.swift */,
+				950F8FD12CDB3744000D42DA /* UITextField+Extension.swift */,
+				950F8FD32CDB3977000D42DA /* UIViewController+Extension.swift */,
 			);
 			path = "UI+Extension";
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950F8FD42CDB3977000D42DA /* UIViewController+Extension.swift in Sources */,
 				950F8F862CDB2805000D42DA /* AppDependency.swift in Sources */,
 				950F8F7D2CDB279B000D42DA /* TodoGuide.swift in Sources */,
 				950F8F962CDB28BE000D42DA /* SpashViewController.swift in Sources */,
@@ -423,6 +430,7 @@
 				950F8F8C2CDB2818000D42DA /* UserDefaultHandler.swift in Sources */,
 				950F8F902CDB285B000D42DA /* BaseViewController.swift in Sources */,
 				950F8FCE2CDB33CB000D42DA /* UIButton+Extension.swift in Sources */,
+				950F8FD22CDB3744000D42DA /* UITextField+Extension.swift in Sources */,
 				950F8F9A2CDB28D0000D42DA /* SplashView.swift in Sources */,
 				950F8FB62CDB2944000D42DA /* MyPageViewController.swift in Sources */,
 				950F8F9E2CDB28E4000D42DA /* AuthView.swift in Sources */,
