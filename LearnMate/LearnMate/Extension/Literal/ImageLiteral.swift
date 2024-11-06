@@ -13,6 +13,7 @@ public enum LMImage {
 
 public enum LMButton {
     public static var backButton: UIImage { .load(name: "ic_back")}
+    public static var closeButton: UIImage { .load(name: "ic_close")}
 }
 
 extension UIImage {
