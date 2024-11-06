@@ -68,5 +68,22 @@ class SignUpViewController: BaseViewController {
         print("name: " + auth.name)
         print("id: " + auth.id)
         print("password: " + auth.password)
+
+//        if success {
+            showAlert()
+//        }
+    }
+}
+
+extension SignUpViewController {
+    private func showAlert() {
+        let successAlertViewController = UIAlertController(title: "회원가입 완료", message: "회원가입에 성공했습니다.", preferredStyle: .alert)
+
+        let confirmAction = UIAlertAction(title: "확인", style: .default) { _ in
+            self.router.presentAuthViewController()
+        }
+
+        successAlertViewController.addAction(confirmAction)
+        present(successAlertViewController, animated: true)
     }
 }

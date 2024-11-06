@@ -12,6 +12,11 @@ final class BaseRouter {
     weak var viewController: UIViewController?
     
     // MARK: Routing
+    func presentAuthViewController() {
+        let authViewController = AuthViewController()
+        viewController?.navigationController?.pushViewController(authViewController, animated: true)
+    }
+
     func presentSignInViewController() {
         let signInViewController = SignInViewController()
         signInViewController.modalPresentationStyle = .fullScreen

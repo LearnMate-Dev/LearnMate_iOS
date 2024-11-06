@@ -47,4 +47,9 @@ class AuthViewController: BaseViewController {
             router.presentSignUpViewController()
         }
     }
+
+    // MARK: Navigation Item
+    override func setNavigationItem() {
+        navigationItem.hidesBackButton = true
+    }
 }
