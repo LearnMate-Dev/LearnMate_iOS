@@ -14,9 +14,6 @@
 		950F8F6D2CDB2762000D42DA /* LMColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950F8F6C2CDB2762000D42DA /* LMColors.xcassets */; };
 		950F8F6F2CDB276B000D42DA /* UI+Extension.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950F8F6E2CDB276B000D42DA /* UI+Extension.xcassets */; };
 		950F8F712CDB2773000D42DA /* Literal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F702CDB2773000D42DA /* Literal.swift */; };
-		950F8F732CDB2779000D42DA /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F722CDB2779000D42DA /* Auth.swift */; };
-		950F8F752CDB277D000D42DA /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F742CDB277D000D42DA /* Diary.swift */; };
-		950F8F772CDB2781000D42DA /* TodoGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F762CDB2781000D42DA /* TodoGuide.swift */; };
 		950F8F792CDB2788000D42DA /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F782CDB2788000D42DA /* Auth.swift */; };
 		950F8F7B2CDB278D000D42DA /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F7A2CDB278D000D42DA /* Diary.swift */; };
 		950F8F7D2CDB279B000D42DA /* TodoGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8F7C2CDB279B000D42DA /* TodoGuide.swift */; };
@@ -37,14 +34,14 @@
 		950F8FA62CDB2913000D42DA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FA52CDB2913000D42DA /* SignInViewController.swift */; };
 		950F8FA82CDB291A000D42DA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FA72CDB291A000D42DA /* SignUpView.swift */; };
 		950F8FAA2CDB291F000D42DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FA92CDB291F000D42DA /* SignUpViewController.swift */; };
-		950F8FAC2CDB2925000D42DA /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FAB2CDB2925000D42DA /* DiaryView.swift */; };
-		950F8FAE2CDB292A000D42DA /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FAD2CDB292A000D42DA /* DiaryViewController.swift */; };
 		950F8FB02CDB2930000D42DA /* TodoGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FAF2CDB2930000D42DA /* TodoGuideView.swift */; };
 		950F8FB22CDB2937000D42DA /* TodoGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FB12CDB2937000D42DA /* TodoGuideViewController.swift */; };
 		950F8FB42CDB293D000D42DA /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FB32CDB293D000D42DA /* MyPageView.swift */; };
 		950F8FB62CDB2944000D42DA /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FB52CDB2944000D42DA /* MyPageViewController.swift */; };
 		950F8FB92CDB29CF000D42DA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 950F8FB82CDB29CF000D42DA /* SnapKit */; };
 		950F8FBC2CDB29DB000D42DA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 950F8FBB2CDB29DB000D42DA /* Then */; };
+		950F8FBF2CDB2E04000D42DA /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FBE2CDB2E04000D42DA /* DiaryView.swift */; };
+		950F8FC32CDB2E15000D42DA /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,9 +54,6 @@
 		950F8F6C2CDB2762000D42DA /* LMColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LMColors.xcassets; sourceTree = "<group>"; };
 		950F8F6E2CDB276B000D42DA /* UI+Extension.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "UI+Extension.xcassets"; sourceTree = "<group>"; };
 		950F8F702CDB2773000D42DA /* Literal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Literal.swift; sourceTree = "<group>"; };
-		950F8F722CDB2779000D42DA /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
-		950F8F742CDB277D000D42DA /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
-		950F8F762CDB2781000D42DA /* TodoGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoGuide.swift; sourceTree = "<group>"; };
 		950F8F782CDB2788000D42DA /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		950F8F7A2CDB278D000D42DA /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		950F8F7C2CDB279B000D42DA /* TodoGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoGuide.swift; sourceTree = "<group>"; };
@@ -80,12 +74,12 @@
 		950F8FA52CDB2913000D42DA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		950F8FA72CDB291A000D42DA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		950F8FA92CDB291F000D42DA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		950F8FAB2CDB2925000D42DA /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
-		950F8FAD2CDB292A000D42DA /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		950F8FAF2CDB2930000D42DA /* TodoGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoGuideView.swift; sourceTree = "<group>"; };
 		950F8FB12CDB2937000D42DA /* TodoGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoGuideViewController.swift; sourceTree = "<group>"; };
 		950F8FB32CDB293D000D42DA /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		950F8FB52CDB2944000D42DA /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		950F8FBE2CDB2E04000D42DA /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,9 +155,9 @@
 		950F8F682CDB270C000D42DA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				950F8F722CDB2779000D42DA /* Auth.swift */,
-				950F8F742CDB277D000D42DA /* Diary.swift */,
-				950F8F762CDB2781000D42DA /* TodoGuide.swift */,
+				950F8FC42CDB2F38000D42DA /* Auth */,
+				950F8FC52CDB2F3E000D42DA /* Diary */,
+				950F8FC62CDB2F47000D42DA /* TodoGuide */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -185,7 +179,7 @@
 				950F8F7F2CDB27C9000D42DA /* Splash */,
 				950F8F842CDB27DB000D42DA /* TabBar */,
 				950F8F832CDB27D7000D42DA /* Auth */,
-				950F8F822CDB27D4000D42DA /* Diary */,
+				950F8FBD2CDB2DF9000D42DA /* Diary */,
 				950F8F812CDB27D0000D42DA /* TodoGuide */,
 				950F8F802CDB27CD000D42DA /* MyPage */,
 			);
@@ -197,8 +191,8 @@
 			children = (
 				950F8F512CDB2182000D42DA /* AppDelegate.swift */,
 				950F8F532CDB2182000D42DA /* SceneDelegate.swift */,
-				950F8F872CDB280A000D42DA /* Storage.swift */,
 				950F8F852CDB2805000D42DA /* AppDependency.swift */,
+				950F8F872CDB280A000D42DA /* Storage.swift */,
 				950F8F892CDB2811000D42DA /* UserDefault.swift */,
 				950F8F8B2CDB2818000D42DA /* UserDefaultHandler.swift */,
 			);
@@ -208,8 +202,8 @@
 		950F8F7E2CDB27A3000D42DA /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				950F8F8F2CDB285B000D42DA /* BaseViewController.swift */,
 				950F8F912CDB2863000D42DA /* BaseView.swift */,
+				950F8F8F2CDB285B000D42DA /* BaseViewController.swift */,
 				950F8F932CDB2869000D42DA /* BaseButton.swift */,
 				950F8F8D2CDB2852000D42DA /* BaseRouter.swift */,
 			);
@@ -241,15 +235,6 @@
 				950F8FB12CDB2937000D42DA /* TodoGuideViewController.swift */,
 			);
 			path = TodoGuide;
-			sourceTree = "<group>";
-		};
-		950F8F822CDB27D4000D42DA /* Diary */ = {
-			isa = PBXGroup;
-			children = (
-				950F8FAB2CDB2925000D42DA /* DiaryView.swift */,
-				950F8FAD2CDB292A000D42DA /* DiaryViewController.swift */,
-			);
-			path = Diary;
 			sourceTree = "<group>";
 		};
 		950F8F832CDB27D7000D42DA /* Auth */ = {
@@ -287,6 +272,36 @@
 				950F8FA92CDB291F000D42DA /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		950F8FBD2CDB2DF9000D42DA /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				950F8FBE2CDB2E04000D42DA /* DiaryView.swift */,
+				950F8FC22CDB2E15000D42DA /* DiaryViewController.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		950F8FC42CDB2F38000D42DA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		950F8FC52CDB2F3E000D42DA /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		950F8FC62CDB2F47000D42DA /* TodoGuide */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TodoGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,15 +395,12 @@
 				950F8F942CDB2869000D42DA /* BaseButton.swift in Sources */,
 				950F8FB42CDB293D000D42DA /* MyPageView.swift in Sources */,
 				950F8FA82CDB291A000D42DA /* SignUpView.swift in Sources */,
-				950F8FAC2CDB2925000D42DA /* DiaryView.swift in Sources */,
 				950F8FA62CDB2913000D42DA /* SignInViewController.swift in Sources */,
-				950F8F732CDB2779000D42DA /* Auth.swift in Sources */,
+				950F8FC32CDB2E15000D42DA /* DiaryViewController.swift in Sources */,
 				950F8FB02CDB2930000D42DA /* TodoGuideView.swift in Sources */,
 				950F8F712CDB2773000D42DA /* Literal.swift in Sources */,
 				950F8F882CDB280A000D42DA /* Storage.swift in Sources */,
 				950F8F8E2CDB2852000D42DA /* BaseRouter.swift in Sources */,
-				950F8F772CDB2781000D42DA /* TodoGuide.swift in Sources */,
-				950F8FAE2CDB292A000D42DA /* DiaryViewController.swift in Sources */,
 				950F8F522CDB2182000D42DA /* AppDelegate.swift in Sources */,
 				950F8F7B2CDB278D000D42DA /* Diary.swift in Sources */,
 				950F8F542CDB2182000D42DA /* SceneDelegate.swift in Sources */,
@@ -397,9 +409,9 @@
 				950F8F902CDB285B000D42DA /* BaseViewController.swift in Sources */,
 				950F8F9A2CDB28D0000D42DA /* SplashView.swift in Sources */,
 				950F8FB62CDB2944000D42DA /* MyPageViewController.swift in Sources */,
-				950F8F752CDB277D000D42DA /* Diary.swift in Sources */,
 				950F8F9E2CDB28E4000D42DA /* AuthView.swift in Sources */,
 				950F8FB22CDB2937000D42DA /* TodoGuideViewController.swift in Sources */,
+				950F8FBF2CDB2E04000D42DA /* DiaryView.swift in Sources */,
 				950F8F792CDB2788000D42DA /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,7 +558,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LearnMate/Info.plist;
+				INFOPLIST_FILE = LearnMate/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -573,7 +585,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LearnMate/Info.plist;
+				INFOPLIST_FILE = LearnMate/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
