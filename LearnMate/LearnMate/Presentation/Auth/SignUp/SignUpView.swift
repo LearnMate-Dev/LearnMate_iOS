@@ -57,6 +57,7 @@ final class SignUpView: BaseView {
 
     private let passwordTextField = UITextField().then {
         $0.setDefaultTextField(placeholder: "비밀번호를 입력해주세요")
+        $0.isSecureTextEntry = true
     }
 
     private let passwordEmptyLabel = UILabel().then {
@@ -69,6 +70,7 @@ final class SignUpView: BaseView {
 
     private let passwordCheckTextField = UITextField().then {
         $0.setDefaultTextField(placeholder: "비밀번호를 한번 더 입력해주세요")
+        $0.isSecureTextEntry = true
     }
 
     private let passwordCheckInvalidLabel = UILabel().then {
@@ -81,9 +83,13 @@ final class SignUpView: BaseView {
         $0.setDefaultButton(title: "회원가입하기", titleColor: .black, backgroundColor: .lmMain)
     }
 
+    // MARK: Properties
+    var tapSignUp: (() -> Void)?
+
     // MARK: Configuration
     override func configureSubviews() {
         backgroundColor = .white
+        addButtonEvent()
 
         addSubview(scrollView)
         scrollView.addSubview(signUpEntireView)
@@ -220,5 +226,58 @@ final class SignUpView: BaseView {
         signUpButton.snp.makeConstraints {
             $0.top.horizontalEdges.equalToSuperview().inset(20)
         }
+    }
+
+    // MARK: Event
+    private func addButtonEvent() {
+        signUpButton.addTarget(self, action: #selector(handleSignUpButton), for: .touchUpInside)
+    }
+
+    @objc
+    private func handleSignUpButton() {
+        tapSignUp?()
+    }
+
+    // MARK: Init Data
+    func setEmptyLabelHidden() {
+        nameEmptyLabel.isHidden = true
+        idEmptyLabel.isHidden = true
+        passwordEmptyLabel.isHidden = true
+        passwordCheckInvalidLabel.isHidden = true
+    }
+
+    func checkValidInput() -> Bool {
+        guard let name = nameTextField.text else { return false }
+        nameEmptyLabel.isHidden = !name.isEmpty
+
+        guard let id = idTextField.text else { return false }
+        idEmptyLabel.isHidden = !id.isEmpty
+
+        guard let password = passwordTextField.text else { return false }
+        passwordEmptyLabel.isHidden = !password.isEmpty
+
+        guard let passwordCheck = passwordCheckTextField.text else { return false }
+        passwordCheckInvalidLabel.isHidden = (password == passwordCheck)
+
+        if nameEmptyLabel.isHidden && idEmptyLabel.isHidden && passwordEmptyLabel.isHidden && passwordCheckInvalidLabel.isHidden {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    func getSignUpInput() -> Auth {
+        var auth = Auth(name: "", id: "", password: "")
+
+        guard let name = nameTextField.text,
+              let id = idTextField.text,
+              let password = passwordTextField.text,
+              let passwordCheck = passwordCheckTextField.text else { return auth }
+
+        auth.name = name
+        auth.id = id
+        auth.password = password
+
+        return auth
     }
 }

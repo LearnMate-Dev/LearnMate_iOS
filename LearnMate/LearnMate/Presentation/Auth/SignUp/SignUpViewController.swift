@@ -23,6 +23,7 @@ class SignUpViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        signUpView.setEmptyLabelHidden()
         router.viewController = self
     }
 
@@ -44,6 +45,14 @@ class SignUpViewController: BaseViewController {
             guard let self else { return }
             router.popViewController()
         }
+
+        signUpView.tapSignUp = { [weak self] in
+            guard let self else { return }
+            var isValid = signUpView.checkValidInput()
+            if isValid {
+                postSignUp(auth: signUpView.getSignUpInput())
+            }
+        }
     }
 
     // MARK: Set Navigation Item
@@ -53,5 +62,11 @@ class SignUpViewController: BaseViewController {
                                  rightBarButton: nil)
         navigationItem.hidesBackButton = true
         navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+
+    private func postSignUp(auth: Auth) {
+        print("name: " + auth.name)
+        print("id: " + auth.id)
+        print("password: " + auth.password)
     }
 }
