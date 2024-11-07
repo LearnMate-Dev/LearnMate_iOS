@@ -12,8 +12,16 @@ public enum LMImage {
 }
 
 public enum LMButton {
-    public static var backButton: UIImage { .load(name: "ic_back")}
-    public static var closeButton: UIImage { .load(name: "ic_close")}
+    public static var back: UIImage { .load(name: "ic_back")}
+    public static var close: UIImage { .load(name: "ic_close")}
+    public static var home: UIImage { .load(name: "tab_home")}
+    public static var homeFilled: UIImage { .load(name: "tab_homeFilled")}
+    public static var diary: UIImage { .load(name: "tab_diary")}
+    public static var diaryFilled: UIImage { .load(name: "tab_diaryFilled")}
+    public static var todoGuide: UIImage { .load(name: "tab_todoGuide")}
+    public static var todoGuideFilled: UIImage { .load(name: "tab_todoGuideFilled")}
+    public static var myPage: UIImage { .load(name: "tab_myPage")}
+    public static var myPageFilled: UIImage { .load(name: "tab_myPageFilled")}
 }
 
 extension UIImage {
