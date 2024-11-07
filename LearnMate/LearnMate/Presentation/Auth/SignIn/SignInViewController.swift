@@ -50,5 +50,51 @@ class SignInViewController: BaseViewController {
             guard let self else { return }
             router.dismissViewController()
         }
+
+        signInView.tapSignIn = { [weak self] in
+            guard let self else { return }
+            let isValid: (Bool, String?) = signInView.checkValidInput()
+            print(isValid)
+            if isValid.0 {
+                postSignIn(auth: signInView.getSignInInput())
+            } else {
+                showEmptyAlert(errorCase: isValid.1 ?? "")
+            }
+        }
+    }
+}
+
+extension SignInViewController {
+    private func postSignIn(auth: Auth) {
+        print("id: " + auth.id)
+        print("password: " + auth.password)
+
+//        if success {
+//           router.presentHomeViewController()
+//        } else {
+            showErrorAlert()
+//        }
+    }
+
+    private func showEmptyAlert(errorCase: String) {
+        let successAlertViewController = UIAlertController(title: "로그인 실패", message: errorCase + "를 입력해주세요.", preferredStyle: .alert)
+
+        let confirmAction = UIAlertAction(title: "확인", style: .default) { _ in
+            self.router.presentAuthViewController()
+        }
+
+        successAlertViewController.addAction(confirmAction)
+        present(successAlertViewController, animated: true)
+    }
+
+    private func showErrorAlert() {
+        let successAlertViewController = UIAlertController(title: "로그인 실패", message: "아이디 또는 비밀번호가 일치하지 않습니다.", preferredStyle: .alert)
+
+        let confirmAction = UIAlertAction(title: "확인", style: .default) { _ in
+            self.router.presentAuthViewController()
+        }
+
+        successAlertViewController.addAction(confirmAction)
+        present(successAlertViewController, animated: true)
     }
 }

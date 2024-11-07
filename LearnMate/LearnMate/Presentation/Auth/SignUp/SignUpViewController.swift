@@ -48,7 +48,7 @@ class SignUpViewController: BaseViewController {
 
         signUpView.tapSignUp = { [weak self] in
             guard let self else { return }
-            var isValid = signUpView.checkValidInput()
+            let isValid = signUpView.checkValidInput()
             if isValid {
                 postSignUp(auth: signUpView.getSignUpInput())
             }
@@ -63,9 +63,11 @@ class SignUpViewController: BaseViewController {
         navigationItem.hidesBackButton = true
         navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
+}
 
+extension SignUpViewController {
     private func postSignUp(auth: Auth) {
-        print("name: " + auth.name)
+        print("name: " + (auth.name ?? ""))
         print("id: " + auth.id)
         print("password: " + auth.password)
 
@@ -73,9 +75,7 @@ class SignUpViewController: BaseViewController {
             showAlert()
 //        }
     }
-}
 
-extension SignUpViewController {
     private func showAlert() {
         let successAlertViewController = UIAlertController(title: "회원가입 완료", message: "회원가입에 성공했습니다.", preferredStyle: .alert)
 

@@ -27,9 +27,14 @@ final class SignInView: BaseView {
         $0.setDefaultButton(title: "로그인", titleColor: .black, backgroundColor: .lmMain)
     }
 
+    // MARK: Properties
+    var tapSignIn: (() -> Void)?
+
     // MARK: Configuration
     override func configureSubviews() {
         backgroundColor = .white
+        addButtonEvent()
+        
         addSubview(logoImageView)
         addSubview(idTextField)
         addSubview(passwordTextField)
@@ -58,5 +63,37 @@ final class SignInView: BaseView {
             $0.top.equalTo(passwordTextField.snp.bottom).offset(26)
             $0.horizontalEdges.width.equalToSuperview()
         }
+    }
+
+    // MARK: Event
+    private func addButtonEvent() {
+        signInButton.addTarget(self, action: #selector(handleSignInButton), for: .touchUpInside)
+    }
+
+    @objc
+    private func handleSignInButton() {
+        tapSignIn?()
+    }
+
+    func checkValidInput() -> (Bool, errorCase: String?) {
+        guard let id = idTextField.text else { return (false, "아이디") }
+        guard let password = passwordTextField.text else { return (false, "비밀번호") }
+
+        if id.isEmpty { return (false, "아이디") }
+        if password.isEmpty { return (false, "비밀번호") }
+
+        return (true, nil)
+    }
+
+    func getSignInInput() -> Auth {
+        var auth = Auth(id: "", password: "")
+        
+        guard let id = idTextField.text,
+              let password = passwordTextField.text else { return auth }
+
+        auth.id = id
+        auth.password = password
+
+        return auth
     }
 }
