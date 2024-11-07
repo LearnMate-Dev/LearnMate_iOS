@@ -13,7 +13,7 @@ class SignUpViewController: BaseViewController {
     private let signUpView = SignUpView()
 
     private let backButton = BaseButton().then {
-        $0.setImage(LMButton.backButton, for: .normal)
+        $0.setImage(LMButton.back, for: .normal)
     }
 
     // MARK: Environment

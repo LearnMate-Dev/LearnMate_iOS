@@ -13,7 +13,7 @@ class SignInViewController: BaseViewController {
     private let signInView = SignInView()
 
     private let closeButton = BaseButton().then {
-        $0.setImage(LMButton.closeButton, for: .normal)
+        $0.setImage(LMButton.close, for: .normal)
     }
 
     // MARK: Environment
@@ -54,7 +54,6 @@ class SignInViewController: BaseViewController {
         signInView.tapSignIn = { [weak self] in
             guard let self else { return }
             let isValid: (Bool, String?) = signInView.checkValidInput()
-            print(isValid)
             if isValid.0 {
                 postSignIn(auth: signInView.getSignInInput())
             } else {
@@ -70,9 +69,10 @@ extension SignInViewController {
         print("password: " + auth.password)
 
 //        if success {
-//           router.presentHomeViewController()
+        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+        sceneDelegate?.changeRootViewToTabBarViewController()
 //        } else {
-            showErrorAlert()
+//            showErrorAlert()
 //        }
     }
 
