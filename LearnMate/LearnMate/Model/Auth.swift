@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Auth {
+    var name: String?
+    var id: String
+    var password: String
+}

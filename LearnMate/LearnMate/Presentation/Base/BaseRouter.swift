@@ -12,8 +12,27 @@ final class BaseRouter {
     weak var viewController: UIViewController?
     
     // MARK: Routing
-    func presentSampleViewController() {
-        let sampleViewController = UIViewController()
-        viewController?.navigationController?.pushViewController(sampleViewController, animated: true)
+    func presentAuthViewController() {
+        let authViewController = AuthViewController()
+        viewController?.navigationController?.pushViewController(authViewController, animated: true)
+    }
+
+    func presentSignInViewController() {
+        let signInViewController = SignInViewController()
+        signInViewController.modalPresentationStyle = .fullScreen
+        viewController?.present(signInViewController, animated: true)
+    }
+
+    func presentSignUpViewController() {
+        let signUpViewController = SignUpViewController()
+        viewController?.navigationController?.pushViewController(signUpViewController, animated: true)
+    }
+
+    func popViewController() {
+        viewController?.navigationController?.popViewController(animated: true)
+    }
+
+    func dismissViewController() {
+        viewController?.dismiss(animated: true)
     }
 }
